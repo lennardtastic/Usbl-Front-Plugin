@@ -81,5 +81,8 @@ Front.on('conversation', function (data) {
 });
 
 function tagCustomerSupport(){
-  Front.attachTag('332143');
+  Front.attachTag(332143);
+}
+function tagCSMSupport(){
+  Front.attachTag('CSM-Support');
 }
