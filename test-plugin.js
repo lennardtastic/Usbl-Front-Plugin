@@ -83,22 +83,21 @@ Front.on('conversation', function (data) {
 });
 
 function tagCustomerSupport(){
-  Front.attachTag('tag_74a7');
+  Front.attachTag('customer_support');
 }
 function tagCSMSupport(){
-  Front.attachTag('tag_74af');
+  Front.attachTag('csm_support');
 }
 function tagSalesSupport(){
-  Front.attachTag('tag_74a5');
+  Front.attachTag('sales_support');
 }
 function tagUsblWebsites(){
-  Front.attachTag("1p8b");
+  Front.attachTag(u4w');
 }
 function tagUsblApps(){
-  Front.attachTag("1pk6");
+  Front.attachTag('u4a');
 }
 function tagUsblEmail(){
- // Front.attachTag('1we5');
- Front.attachTag("U4E");
+ Front.attachTag('u4e');
 }
 
