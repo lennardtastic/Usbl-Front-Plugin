@@ -89,13 +89,13 @@ function tagCSMSupport(){
 function tagSalesSupport(){
   Front.attachTag('tag_74a5');
 }
-function tagUsblWebsite(){
-  Front.attachTag('tag_1p8b');
+function tagUsblWebsites(){
+  Front.attachTag('1p8b');
 }
 function tagUsblApps(){
-  Front.attachTag('tag_1pk6');
+  Front.attachTag('1pk6');
 }
 function tagUsblEmail(){
-  Front.attachTag('tag_1we5');
+  Front.attachTag('1we5');
 }
 
