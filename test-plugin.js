@@ -84,5 +84,18 @@ function tagCustomerSupport(){
   Front.attachTag('tag_74a7');
 }
 function tagCSMSupport(){
-  Front.attachTag('CSM-Support');
+  Front.attachTag('tag_74af');
 }
+function tagSalesSupport(){
+  Front.attachTag('tag_74a5');
+}
+function tagUsblWebsite(){
+  Front.attachTag('tag_1p8b');
+}
+function tagUsblApps(){
+  Front.attachTag('tag_1pk6');
+}
+function tagUsblEmail(){
+  Front.attachTag('tag_1we5');
+}
+
