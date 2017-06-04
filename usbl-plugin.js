@@ -92,7 +92,7 @@ function tagSalesSupport(){
   Front.attachTag('sales_support');
 }
 function tagUsblWebsites(){
-  Front.attachTag(u4w');
+  Front.attachTag('u4w');
 }
 function tagUsblApps(){
   Front.attachTag('u4a');
