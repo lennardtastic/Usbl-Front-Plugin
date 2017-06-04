@@ -81,7 +81,7 @@ Front.on('conversation', function (data) {
 });
 
 function tagCustomerSupport(){
-  Front.attachTag(332143);
+  Front.attachTag('tag_74a7');
 }
 function tagCSMSupport(){
   Front.attachTag('CSM-Support');
