@@ -63,14 +63,15 @@ function fetchTeammates() {
   });
 }
 
-function fetchInboxes() {
-  Front.fetchInboxes(function (inboxes) {
-    if (!inboxes)
+function fetchTags() {
+  Front.fetchAllowedTags(function (tags) {
+    if (!tags)
       return;
 
-    console.log(inboxes);
+    console.log(tags);
   });
 }
+
 
 Front.on('conversation', function (data) {
   console.log('Conversation', data.conversation);
@@ -78,6 +79,7 @@ Front.on('conversation', function (data) {
   console.log('Message', data.message);
   console.log('OtherMessages', data.otherMessages);
   conversation = data.conversation;
+  fetchTags();
 });
 
 function tagCustomerSupport(){
