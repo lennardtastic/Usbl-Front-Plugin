@@ -1,22 +1,26 @@
 <!DOCTYPE html>
 <html>
   <head>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     <script type="text/javascript" src="https://dl.frontapp.com/libs/frontjs.min.js"></script>
     <script type="text/javascript" src="usbl-plugin.js"></script>
     <script type="text/javascript" src="js/materialize.min.js"></script>
+
+
 
     <link rel="stylesheet" type="text/css" href="css/main.css" />
     <link rel="stylesheet" type="text/css" href="css/materialize.min.css" />
     <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
   </head>
   <body>
-    <h4 class="center-align">Tag Support Type</h4>
-    <blockquote>
-     Tag what type of support the message considers. If it's not one of the three types below tag with "other".
-    </blockquote>
-    <div class="center-align">
+    <div class="center-align mediBtns">
+      <h5 class="center-align">Tag Support Type</h5>
+      <blockquote>
+       Tag what type of support the message considers. If it's not one of the three types below tag with "other".
+      </blockquote>
       <a class="waves-effect waves-light btn helper-w-200px" onclick="tagCustomerSupport()">
         <i class="material-icons left">face</i>
         Tag Customer
@@ -30,11 +34,12 @@
         Tag Sales
       </a><br><br>
     </div>
-    <h4 class="center-align">Tag Product</h4>
-    <blockquote>
-     Tag what type of product was mentioned in the message. The message will move automatically when you tag it in the main channel.
-    </blockquote>
-    <div class="center-align">
+
+    <div class="center-align mediBtns">
+      <h5 class="center-align">Tag Product</h5>
+      <blockquote>
+       Tag what type of product was mentioned in the message. The message will move automatically when you tag it in the main channel.
+      </blockquote>
       <a class="waves-effect waves-light btn orange" onclick="tagUsblWebsites()">
         <i class="material-icons left">computer</i> Tag U4W
       </a><br><br>
@@ -43,6 +48,32 @@
       </a><br><br>
       <a class="waves-effect waves-light btn orange" onclick="tagUsblApps()">
         <i class="material-icons left">smartphone</i>Tag U4A
+      </a><br><br>
+    </div>
+
+    <div class="center-align miniBtns">
+      <h5 class="center-align">Type</h5>
+      <a class="btn-floating btn-large waves-effect waves-light green tooltipped" onclick="tagCustomerSupport()" data-position="top" data-tooltip="Customer-Support">
+        <i class="fa fa-life-ring fa-2x" aria-hidden="true"></i>
+      </a><br><br>
+      <a class="btn-floating btn-large waves-effect waves-light green tooltipped" onclick="tagCSMSupport()" data-position="top" data-tooltip="CSM-Support">
+        <i class="fa fa-trophy fa-2x" aria-hidden="true"></i>
+      </a><br><br>
+      <a class="btn-floating btn-large waves-effect waves-light green tooltipped" onclick="tagSalesSupport()" data-position="top" data-tooltip="Sales-Support">
+        <i class="fa fa-certificate fa-2x" aria-hidden="true"></i>
+      </a><br><br>
+    </div>
+    <br><br>
+    <div class="center-align miniBtns">
+      <h5 class="center-align">Product</h5>
+      <a class="btn-floating btn-large waves-effect waves-light orange tooltipped" onclick="tagUsblWebsites()" data-position="top" data-tooltip="U4W">
+        <i class="fa fa-desktop fa-2x" aria-hidden="true"></i>
+      </a><br><br>
+      <a class="btn-floating btn-large waves-effect waves-light orange tooltipped" onclick="tagUsblEmail()" data-position="top" data-tooltip="U4E">
+        <i class="material-icons left">email</i>
+      </a><br><br>
+      <a class="btn-floating btn-large waves-effect waves-light orange tooltipped" onclick="tagUsblApps()" data-position="top" data-tooltip="U4A">
+        <i class="material-icons left">smartphone</i>
       </a><br><br>
     </div>
   </body>

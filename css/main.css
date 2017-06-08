@@ -9,6 +9,31 @@ button {
   margin-top: 2px;
 }
 
-.helper-w-200px{
-  width: 200px;
+
+@media all and (max-width: 1080px) {
+  .mediBtns{
+    display:block;
+  }
+  .miniBtns{
+    display:block;
+  }
+
+}
+
+@media all and (max-width: 480px) {
+  .mediBtns{
+    display:block;
+  }
+  .miniBtns{
+    display:none;
+  }
+}
+
+@media all and (max-width: 300px) {
+  .mediBtns{
+    display:none;
+  }
+  .miniBtns{
+    display:block;
+  }
 }
