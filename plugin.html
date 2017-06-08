@@ -1,36 +1,49 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <style>
-      body {
-      }
-      button {
-        display: block;
-        width: 250px;
-        margin-left: auto;
-        margin-right: auto;
-        margin-top: 2px;
-      }
-    </style>
     <script type="text/javascript" src="https://dl.frontapp.com/libs/frontjs.min.js"></script>
     <script type="text/javascript" src="usbl-plugin.js"></script>
+    <script type="text/javascript" src="js/materialize.min.js"></script>
+
+    <link rel="stylesheet" type="text/css" href="css/main.css" />
+    <link rel="stylesheet" type="text/css" href="css/materialize.min.css" />
+    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
   </head>
   <body>
-    <button onClick="unassign()">Unassign</button>
-    <button onClick="toggleArchive()">Archive/Unarchive</button>
-    <button onClick="toggleTrashed()">Trash/Untrash</button>
-    <button onClick="reply()">Reply</button>
-    <button onClick="alertDialog()">Pop alert dialog</button>
-    <button onClick="confirmDialog()">Pop confirm dialog</button>
-    <button onClick="promptDialog()">Pop prompt dialog</button>
-    <button onclick="fetchTeammates()">Fetch teammates</button>
-    <button onclick="fetchInboxes()">Fetch inboxes</button>
-    <button onclick="tagCustomerSupport()">Tag Customer-Support</button>
-    <button onclick="tagCSMSupport()">Tag CSM-Support</button>
-    <button onclick="tagSalesSupport()">Tag Sales Support</button>
-    <button onclick="tagUsblWebsites()">Tag U4W</button>
-    <button onclick="tagUsblEmail()">Tag U4E</button>
-    <button onclick="tagUsblApps()">Tag U4A</button>
-    
+    <h4 class="center-align">Tag Support Type</h4>
+    <blockquote>
+     Tag what type of support the message considers. If it's not one of the three types below tag with "other".
+    </blockquote>
+    <div class="center-align">
+      <a class="waves-effect waves-light btn helper-w-200px" onclick="tagCustomerSupport()">
+        <i class="material-icons left">face</i>
+        Tag Customer
+      </a><br><br>
+      <a class="waves-effect waves-light btn helper-w-200px" onclick="tagCSMSupport()">
+        <i class="material-icons left">tag_faces</i>
+        Tag CSM
+      </a><br><br>
+      <a class="waves-effect waves-light btn helper-w-200px" onclick="tagSalesSupport()">
+        <i class="material-icons left">person</i>
+        Tag Sales
+      </a><br><br>
+    </div>
+    <h4 class="center-align">Tag Product</h4>
+    <blockquote>
+     Tag what type of product was mentioned in the message. The message will move automatically when you tag it in the main channel.
+    </blockquote>
+    <div class="center-align">
+      <a class="waves-effect waves-light btn orange" onclick="tagUsblWebsites()">
+        <i class="material-icons left">computer</i> Tag U4W
+      </a><br><br>
+      <a class="waves-effect waves-light btn orange" onclick="tagUsblEmail()">
+        <i class="material-icons left">email</i>Tag U4E
+      </a><br><br>
+      <a class="waves-effect waves-light btn orange" onclick="tagUsblApps()">
+        <i class="material-icons left">smartphone</i>Tag U4A
+      </a><br><br>
+    </div>
   </body>
 </html>
