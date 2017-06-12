@@ -11,7 +11,8 @@ function hidePluginTips() {
 function changePluginLayout() {
   if ($('#mySwitch').prop('checked') === true) {
     Front.setPanelWidth(300);
-  } else if ($('#mySwitch').prop('checked') === true) {
+  }
+  if ($('#mySwitch').prop('checked') === false) {
     Front.setPanelWidth(100);
   }
 }
