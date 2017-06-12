@@ -10,11 +10,11 @@ function hidePluginTips() {
 // Change the width of the plugin
 function changePluginLayout() {
   if ($('#mySwitch').prop('checked') === true) {
-    Front.setPanelWidth(300);
-    $(".zendeskBlocks").show();
-  } else if ($('#mySwitch').prop('checked') === false) {
     Front.setPanelWidth(100);
     $(".zendeskBlocks").hide();
+  } else if ($('#mySwitch').prop('checked') === false) {
+    Front.setPanelWidth(300);
+    $(".zendeskBlocks").show();
   }
 }
 
