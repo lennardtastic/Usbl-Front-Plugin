@@ -11,9 +11,10 @@ function hidePluginTips() {
 function changePluginLayout() {
   if ($('#mySwitch').prop('checked') === true) {
     Front.setPanelWidth(300);
-  }
-  if ($('#mySwitch').prop('checked') === false) {
+    $(".zendeskBlocks").show();
+  } else if ($('#mySwitch').prop('checked') === false) {
     Front.setPanelWidth(100);
+    $(".zendeskBlocks").hide();
   }
 }
 
