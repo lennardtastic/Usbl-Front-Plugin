@@ -1,6 +1,6 @@
-body {
-}
-
+/*
+ * Consistent width buttons
+ */
 button {
   display: block;
   width: 250px;
@@ -9,7 +9,9 @@ button {
   margin-top: 2px;
 }
 
-
+/*
+ * CSS for debugging layout
+ */
 @media all and (max-width: 1080px) {
   .mediBtns{
     display:block;
@@ -19,8 +21,10 @@ button {
   }
 
 }
-
-@media all and (max-width: 480px) {
+/*
+ * CSS for regular layout
+ */
+@media all and (max-width: 400px) {
   .mediBtns{
     display:block;
   }
@@ -29,7 +33,10 @@ button {
   }
 }
 
-@media all and (max-width: 300px) {
+/*
+ * CSS for thin layout
+ */
+@media all and (max-width: 150px) {
   .mediBtns{
     display:none;
   }

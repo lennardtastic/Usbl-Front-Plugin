@@ -82,6 +82,11 @@ Front.on('conversation', function (data) {
   fetchTags();
 });
 
+/**
+ * Functions for Tagging conversations.
+ * Usage: simply call function
+ * @return Conversation gets tagged
+ */
 function tagCustomerSupport(){
   Front.attachTag('customer_support');
 }
@@ -100,4 +105,3 @@ function tagUsblApps(){
 function tagUsblEmail(){
  Front.attachTag('u4e');
 }
-

@@ -1,80 +1,137 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-    <script type="text/javascript" src="https://dl.frontapp.com/libs/frontjs.min.js"></script>
-    <script type="text/javascript" src="usbl-plugin.js"></script>
-    <script type="text/javascript" src="js/materialize.min.js"></script>
 
+<head>
+  <!--===========
+  ====  JS
+  =============-->
+  <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script type="text/javascript" src="https://dl.frontapp.com/libs/frontjs.min.js"></script>
+  <script type="text/javascript" src="usbl-plugin.js"></script>
+  <script type="text/javascript" src="js/materialize.min.js"></script>
 
+  <!--===========
+  ====  CSS
+  =============-->
+  <link rel="stylesheet" type="text/css" href="css/main.css" />
+  <link rel="stylesheet" type="text/css" href="css/materialize.min.css" />
 
-    <link rel="stylesheet" type="text/css" href="css/main.css" />
-    <link rel="stylesheet" type="text/css" href="css/materialize.min.css" />
-    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <!--===========
+  ====  Fonts
+  =============-->
+  <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
 
-  </head>
-  <body>
-    <div class="center-align mediBtns">
-      <h5 class="center-align">Tag Support Type</h5>
-      <blockquote>
-       Tag what type of support the message considers. If it's not one of the three types below tag with "other".
-      </blockquote>
-      <a class="waves-effect waves-light btn helper-w-200px" onclick="tagCustomerSupport()">
+<body>
+  <!-- Block for wide layout-->
+  <div class="center-align mediBtns">
+    <h5 class="center-align">Tag Support Type</h5>
+    <blockquote class="tipBlock">
+      Tag what type of support the message considers. If it's not one of the three types below tag with "other".
+    </blockquote>
+    <a class="waves-effect waves-light btn helper-w-200px" onclick="tagCustomerSupport()">
         <i class="material-icons left">face</i>
         Tag Customer
       </a><br><br>
-      <a class="waves-effect waves-light btn helper-w-200px" onclick="tagCSMSupport()">
+    <a class="waves-effect waves-light btn helper-w-200px" onclick="tagCSMSupport()">
         <i class="material-icons left">tag_faces</i>
         Tag CSM
       </a><br><br>
-      <a class="waves-effect waves-light btn helper-w-200px" onclick="tagSalesSupport()">
+    <a class="waves-effect waves-light btn helper-w-200px" onclick="tagSalesSupport()">
         <i class="material-icons left">person</i>
         Tag Sales
-      </a><br><br>
-    </div>
-
-    <div class="center-align mediBtns">
-      <h5 class="center-align">Tag Product</h5>
-      <blockquote>
-       Tag what type of product was mentioned in the message. The message will move automatically when you tag it in the main channel.
-      </blockquote>
-      <a class="waves-effect waves-light btn orange" onclick="tagUsblWebsites()">
+      </a><br>
+  </div>
+  <div class="center-align mediBtns">
+    <h5 class="center-align">Tag Product</h5>
+    <blockquote class="tipBlock">
+      Tag what type of product was mentioned in the message. The message will move automatically when you tag it in the main channel.
+    </blockquote>
+    <a class="waves-effect waves-light btn orange" onclick="tagUsblWebsites()">
         <i class="material-icons left">computer</i> Tag U4W
       </a><br><br>
-      <a class="waves-effect waves-light btn orange" onclick="tagUsblEmail()">
+    <a class="waves-effect waves-light btn orange" onclick="tagUsblEmail()">
         <i class="material-icons left">email</i>Tag U4E
       </a><br><br>
-      <a class="waves-effect waves-light btn orange" onclick="tagUsblApps()">
+    <a class="waves-effect waves-light btn orange" onclick="tagUsblApps()">
         <i class="material-icons left">smartphone</i>Tag U4A
       </a><br><br>
-    </div>
+  </div>
 
-    <div class="center-align miniBtns">
-      <h5 class="center-align">Type</h5>
-      <a class="btn-floating btn-large waves-effect waves-light green tooltipped" onclick="tagCustomerSupport()" data-position="top" data-tooltip="Customer-Support">
+  <!-- Block for thin layout-->
+  <div class="center-align miniBtns">
+    <h5 class="center-align">Type</h5>
+    <a class="btn-floating btn-large waves-effect waves-light green tooltipped" onclick="tagCustomerSupport()" data-position="top" data-tooltip="Customer-Support">
         <i class="fa fa-life-ring fa-2x" aria-hidden="true"></i>
       </a><br><br>
-      <a class="btn-floating btn-large waves-effect waves-light green tooltipped" onclick="tagCSMSupport()" data-position="top" data-tooltip="CSM-Support">
+    <a class="btn-floating btn-large waves-effect waves-light green tooltipped" onclick="tagCSMSupport()" data-position="top" data-tooltip="CSM-Support">
         <i class="fa fa-trophy fa-2x" aria-hidden="true"></i>
       </a><br><br>
-      <a class="btn-floating btn-large waves-effect waves-light green tooltipped" onclick="tagSalesSupport()" data-position="top" data-tooltip="Sales-Support">
+    <a class="btn-floating btn-large waves-effect waves-light green tooltipped" onclick="tagSalesSupport()" data-position="top" data-tooltip="Sales-Support">
         <i class="fa fa-certificate fa-2x" aria-hidden="true"></i>
-      </a><br><br>
-    </div>
-    <br><br>
-    <div class="center-align miniBtns">
-      <h5 class="center-align">Product</h5>
-      <a class="btn-floating btn-large waves-effect waves-light orange tooltipped" onclick="tagUsblWebsites()" data-position="top" data-tooltip="U4W">
+      </a>
+  </div>
+  <br>
+  <div class="center-align miniBtns">
+    <h5 class="center-align">Product</h5>
+    <a class="btn-floating btn-large waves-effect waves-light orange tooltipped" onclick="tagUsblWebsites()" data-position="top" data-tooltip="U4W">
         <i class="fa fa-desktop fa-2x" aria-hidden="true"></i>
       </a><br><br>
-      <a class="btn-floating btn-large waves-effect waves-light orange tooltipped" onclick="tagUsblEmail()" data-position="top" data-tooltip="U4E">
+    <a class="btn-floating btn-large waves-effect waves-light orange tooltipped" onclick="tagUsblEmail()" data-position="top" data-tooltip="U4E">
         <i class="material-icons left">email</i>
       </a><br><br>
-      <a class="btn-floating btn-large waves-effect waves-light orange tooltipped" onclick="tagUsblApps()" data-position="top" data-tooltip="U4A">
+    <a class="btn-floating btn-large waves-effect waves-light orange tooltipped" onclick="tagUsblApps()" data-position="top" data-tooltip="U4A">
         <i class="material-icons left">smartphone</i>
       </a><br><br>
+  </div>
+
+  <!-- Block for Switches-->
+  <div class="center-align">
+    <h5>Layout</h5>
+    <!-- Switch for switchting layouts-->
+    <div class="switch">
+      <label>
+          Wide
+          <input type="checkbox" onclick="changePluginLayout()" id="mySwitch">
+          <span class="lever"></span>
+          Thin
+        </label>
     </div>
-  </body>
+    <br>
+    <h5>Tips</h5>
+    <!-- Switch for hiding pragraphs-->
+    <div class="switch">
+      <label>
+          Show
+          <input type="checkbox" onclick="hidePluginTips()" id="tipSwitch">
+          <span class="lever"></span>
+          Hide
+        </label>
+    </div>
+    <br>
+    <br>
+  </div>
+  <!--WIP for Zendesk Integration  -->
+  <div class="row">
+    <form class="col s12">
+      <div class="row">
+        <div class="input-field col s8">
+          <i class="material-icons prefix">search</i>
+          <input id="icon_prefix zendeskSearchKey" type="text" class="validate">
+          <label for="icon_prefix">Keyword</label>
+        </div>
+        <div class="input-field col s4">
+          <a class="waves-effect waves-light btn red" onclick="getZendeskArticles()">Search</a>
+        </div>
+      </div>
+    </form>
+  </div>
+  <div class="row" id="zendeskResults">
+    <!--placeholder for Zendesk Results  -->
+  </div>
+  <!-- Additional JavaScript for plugin-->
+  <script type="text/javascript" src="js/app.js"></script>
+</body>
 </html>
