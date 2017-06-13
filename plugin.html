@@ -89,32 +89,32 @@
 
   <!-- Block for Switches-->
   <div class="center-align">
-    <h5>Layout</h5>
+    <h6>Layout</h6>
     <!-- Switch for switchting layouts-->
     <div class="switch">
       <label>
-          Wide
+          <i class="fa fa-expand" aria-hidden="true"></i>
           <input type="checkbox" onclick="changePluginLayout()" id="mySwitch">
           <span class="lever"></span>
-          Thin
+          <i class="fa fa-compress" aria-hidden="true"></i>
         </label>
     </div>
     <br>
-    <h5>Tips</h5>
+    <h6>Tips</h6>
     <!-- Switch for hiding pragraphs-->
     <div class="switch">
       <label>
-          Show
+          <i class="fa fa-eye" aria-hidden="true"></i>
           <input type="checkbox" onclick="hidePluginTips()" id="tipSwitch">
           <span class="lever"></span>
-          Hide
+          <i class="fa fa-eye-slash" aria-hidden="true"></i>
         </label>
     </div>
     <br>
     <br>
   </div>
   <!--WIP for Zendesk Integration  -->
-  <div class="row" class="zendeskBlocks">
+  <div class="row" id="zendeskSearchBlock">
     <form class="col s12">
       <div class="row">
         <div class="input-field col s8">
@@ -128,7 +128,7 @@
       </div>
     </form>
   </div>
-  <div class="row" id="zendeskResults" class="zendeskBlocks">
+  <div class="row" id="zendeskResultsBlock">
     <!--placeholder for Zendesk Results  -->
   </div>
   <!-- Additional JavaScript for plugin-->
