@@ -10,7 +10,7 @@ function hidePluginTips() {
 // Change the width of the plugin
 function changePluginLayout() {
   if ($('#mySwitch').prop('checked') === true) {
-    Front.setPanelWidth(100);
+    Front.setPanelWidth(120);
     $("#zendeskSearchBlock").hide();
     $("#zendeskResultsBlock").hide();
   } else if ($('#mySwitch').prop('checked') === false) {
