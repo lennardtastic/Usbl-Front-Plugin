@@ -105,3 +105,9 @@ function tagUsblApps(){
 function tagUsblEmail(){
  Front.attachTag('u4e');
 }
+function tagUsblOther(){
+ Front.attachTag('other');
+}
+function tagUsblGeneral(){
+ Front.attachTag('general');
+}

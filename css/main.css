@@ -32,6 +32,7 @@ button {
   text-overflow: ellipsis;
   min-width: 0;
   cursor: pointer;
+  line-height: 24px;
 }
 .button-tag_green{
   background-color: #f6fffa;
@@ -50,24 +51,47 @@ button {
 }
 .button-tag_lightblue{
   background-color: #f5ffff;
-  color: #3bafda;;
+  color: #3bafda;
   border: 1px solid #c2e5f2;
 }
 .button-tag_blue{
   background-color: #F5FAFF;
-  color: #367FD9;;
+  color: #367FD9;
   border: 1px solid #C2D8F3;
 }
 .button-tag_pink{
   background-color: #FFF5F7;
-  color: #FC6D89;;
+  color: #FC6D89;
   border: 1px solid #FFCCD7;
 }
 .button-tag_yellow{
   background-color: #FFFDF5;
-  color: #E3B200;;
+  color: #E3B200;
   border: 1px solid #F3E8C2;
 }
+
+.button-tag_green:hover{
+  background-color: rgba(192, 233, 223, 0.75);
+}
+.button-tag_orange:hover{
+  background-color: rgba(250, 220, 187, 0.75);
+}
+.button-tag_red:hover{
+  background-color: rgba(244, 195, 202, 0.75);
+}
+.button-tag_lightblue:hover{
+  background-color: rgba(194, 229, 242, 0.75);
+}
+.button-tag_blue:hover{
+  background-color: rgba(195, 217, 244, 0.75);
+}
+.button-tag_pink:hover{
+  background-color: rgba(255, 204, 215, 0.75);
+}
+.button-tag_yellow:hover{
+  background-color: rgba(244, 233, 195, 0.75);
+}
+
 .button-tag span{
   font-size: 11px;
   max-width: 20ch;
@@ -83,43 +107,7 @@ button {
   font-weight: inherit;
   font-style: inherit;
   font-family: inherit;
-  font-size: 100%;
+  font-size: 12px;
   vertical-align: baseline;
   cursor: pointer;
-}
-
-/*
- * CSS for debugging layout
- */
-@media all and (max-width: 1080px) {
-  .mediBtns{
-    display:block;
-  }
-  .miniBtns{
-    display:block;
-  }
-
-}
-/*
- * CSS for regular layout
- */
-@media all and (max-width: 400px) {
-  .mediBtns{
-    display:block;
-  }
-  .miniBtns{
-    display:none;
-  }
-}
-
-/*
- * CSS for thin layout
- */
-@media all and (max-width: 150px) {
-  .mediBtns{
-    display:none;
-  }
-  .miniBtns{
-    display:block;
-  }
 }
