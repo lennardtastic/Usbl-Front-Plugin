@@ -27,37 +27,34 @@
 <body>
   <!-- Block for wide layout-->
   <div class="center-align mediBtns">
-    <h5 class="center-align">Tag Support Type</h5>
-    <blockquote class="tipBlock">
-      Tag what type of support the message considers. If it's not one of the three types below tag with "other".
-    </blockquote>
-    <a class="waves-effect waves-light btn helper-w-200px" onclick="tagCustomerSupport()">
-        <i class="material-icons left">face</i>
-        Tag Customer
-      </a><br><br>
-    <a class="waves-effect waves-light btn helper-w-200px" onclick="tagCSMSupport()">
-        <i class="material-icons left">tag_faces</i>
-        Tag CSM
-      </a><br><br>
-    <a class="waves-effect waves-light btn helper-w-200px" onclick="tagSalesSupport()">
-        <i class="material-icons left">person</i>
-        Tag Sales
+    <h5 class="center-align">Tag Type</h5>
+    <a class="button-tag button-tag_green helper-w-200px" onclick="tagCustomerSupport()">
+        <span>customer</span>
+      </a>
+    <a class="button-tag button-tag_green helper-w-200px" onclick="tagCSMSupport()">
+        <span>CSM</span>
+      </a>
+    <a class="button-tag button-tag_green helper-w-200px" onclick="tagSalesSupport()">
+        <span>Sales</span>
+      </a>
+    <a class="button-tag button-tag_green helper-w-200px" onclick="tagOther()">
+        <span>Other</span>
       </a><br>
   </div>
   <div class="center-align mediBtns">
     <h5 class="center-align">Tag Product</h5>
-    <blockquote class="tipBlock">
-      Tag what type of product was mentioned in the message. The message will move automatically when you tag it in the main channel.
-    </blockquote>
-    <a class="waves-effect waves-light btn orange" onclick="tagUsblWebsites()">
-        <i class="material-icons left">computer</i> Tag U4W
-      </a><br><br>
-    <a class="waves-effect waves-light btn orange" onclick="tagUsblEmail()">
-        <i class="material-icons left">email</i>Tag U4E
-      </a><br><br>
-    <a class="waves-effect waves-light btn orange" onclick="tagUsblApps()">
-        <i class="material-icons left">smartphone</i>Tag U4A
-      </a><br><br>
+    <a class="button-tag button-tag_orange helper-w-200px" onclick="tagUsblWebsites()">
+      U4W
+    </a>
+    <a class="button-tag button-tag_orange helper-w-200px" onclick="tagUsblEmail()">
+      U4E
+    </a>
+    <a class="button-tag button-tag_orange helper-w-200px" onclick="tagUsblApps()">
+      U4A
+    </a>
+    <a class="button-tag button-tag_orange helper-w-200px" onclick="tagUsblGeneral()">
+      general
+    </a>
   </div>
 
   <!-- Block for thin layout-->
@@ -100,20 +97,9 @@
         </label>
     </div>
     <br>
-    <h6>Tips</h6>
-    <!-- Switch for hiding pragraphs-->
-    <div class="switch">
-      <label>
-          <i class="fa fa-eye" aria-hidden="true"></i>
-          <input type="checkbox" onclick="hidePluginTips()" id="tipSwitch">
-          <span class="lever"></span>
-          <i class="fa fa-eye-slash" aria-hidden="true"></i>
-        </label>
-    </div>
-    <br>
     <br>
   </div>
-  <!--WIP for Zendesk Integration  -->
+  <!--WIP for Zendesk Integration
   <div class="row" id="zendeskSearchBlock">
     <form class="col s12">
       <div class="row">
@@ -128,7 +114,7 @@
       </div>
     </form>
   </div>
-  <div class="row" id="zendeskResultsBlock">
+  <div class="row" id="zendeskResultsBlock"> -->
     <!--placeholder for Zendesk Results  -->
   </div>
   <!-- Additional JavaScript for plugin-->

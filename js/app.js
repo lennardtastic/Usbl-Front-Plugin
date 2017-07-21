@@ -1,9 +1,9 @@
 // Hide the Plugin Tips in the wide layout
 function hidePluginTips() {
   if ($('#tipSwitch').prop('checked') === true) {
-    $(".tipBlock").hide();
-  } else if ($('#tipSwitch').prop('checked') === false) {
     $(".tipBlock").show();
+  } else if ($('#tipSwitch').prop('checked') === false) {
+    $(".tipBlock").hide();
   }
 }
 
@@ -13,10 +13,16 @@ function changePluginLayout() {
     Front.setPanelWidth(120);
     $("#zendeskSearchBlock").hide();
     $("#zendeskResultsBlock").hide();
-  } else if ($('#mySwitch').prop('checked') === false) {
+  }
+  else if ($('#mySwitch').prop('checked') === false) {
     Front.setPanelWidth(300);
     $("#zendeskSearchBlock").show();
     $("#zendeskResultsBlock").show();
+  }
+  else if ($('#mySwitch').prop('checked') === false) {
+    Front.setPanelWidth(300);
+    $("#zendeskSearchBlock").hide();
+    $("#zendeskResultsBlock").hide();
   }
 }
 
