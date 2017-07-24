@@ -92,6 +92,29 @@ button {
   background-color: rgba(244, 233, 195, 0.75);
 }
 
+
+.button-tag_green-active{
+  background-color: rgba(192, 233, 223, 0.75);
+}
+.button-tag_orange-active{
+  background-color: rgba(250, 220, 187, 0.75);
+}
+.button-tag_red-active{
+  background-color: rgba(244, 195, 202, 0.75);
+}
+.button-tag_lightblue-active{
+  background-color: rgba(194, 229, 242, 0.75);
+}
+.button-tag_blue-active{
+  background-color: rgba(195, 217, 244, 0.75);
+}
+.button-tag_pink-active{
+  background-color: rgba(255, 204, 215, 0.75);
+}
+.button-tag_yellow-active{
+  background-color: rgba(244, 233, 195, 0.75);
+}
+
 .button-tag span{
   font-size: 11px;
   max-width: 20ch;
