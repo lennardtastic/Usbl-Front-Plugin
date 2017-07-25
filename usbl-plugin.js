@@ -23,7 +23,7 @@ function alertDialog() {
   Front.dialog('alert', {
     title: 'I\'m an alert dialog',
     message: 'You are now alerted',
-  }, function () {
+  }, function() {
     console.log('Alert closed');
   });
 }
@@ -34,7 +34,7 @@ function confirmDialog() {
     message: 'Do you confirm',
     okTitle: 'OK Button',
     cancelTitle: 'Cancel Button'
-  }, function (confirmed) {
+  }, function(confirmed) {
     if (confirmed)
       console.log('User confirmed');
     else
@@ -46,7 +46,7 @@ function promptDialog() {
   Front.dialog('prompt', {
     title: 'I\'m a prompt dialog',
     message: 'Please enter something'
-  }, function (data) {
+  }, function(data) {
     if (data)
       console.log('User input :', data);
     else
@@ -55,7 +55,7 @@ function promptDialog() {
 }
 
 function fetchTeammates() {
-  Front.fetchAllowedTeammates(function (teammates) {
+  Front.fetchAllowedTeammates(function(teammates) {
     if (!teammates)
       return;
 
@@ -64,7 +64,7 @@ function fetchTeammates() {
 }
 
 function fetchTags() {
-  Front.fetchAllowedTags(function (tags) {
+  Front.fetchAllowedTags(function(tags) {
     if (!tags)
       return;
 
@@ -77,9 +77,9 @@ function fetchTags() {
  * @param  {[type]} data [description]
  * @return {[type]}      [description]
  */
-Front.on('conversation', function (data) {
+Front.on('conversation', function(data) {
   conversation = data.conversation;
-  fetchTags();
+  Front.fetchTags();
 });
 
 /**
@@ -87,27 +87,34 @@ Front.on('conversation', function (data) {
  * Usage: simply call function
  * @return Conversation gets tagged
  */
-function tagCustomerSupport(){
+function tagCustomerSupport() {
   Front.attachTag('customer_support');
 }
-function tagCSMSupport(){
+
+function tagCSMSupport() {
   Front.attachTag('csm_support');
 }
-function tagSalesSupport(){
+
+function tagSalesSupport() {
   Front.attachTag('sales_support');
 }
-function tagUsblWebsites(){
+
+function tagUsblWebsites() {
   Front.attachTag('u4w');
 }
-function tagUsblApps(){
+
+function tagUsblApps() {
   Front.attachTag('u4a');
 }
-function tagUsblEmail(){
- Front.attachTag('u4e');
+
+function tagUsblEmail() {
+  Front.attachTag('u4e');
 }
-function tagUsblOther(){
- Front.attachTag('other');
+
+function tagUsblOther() {
+  Front.attachTag('other');
 }
-function tagUsblGeneral(){
- Front.attachTag('general');
+
+function tagUsblGeneral() {
+  Front.attachTag('general');
 }
