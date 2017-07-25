@@ -88,33 +88,33 @@ Front.on('conversation', function(data) {
  * @return Conversation gets tagged
  */
 function tagCustomerSupport() {
-  Front.attachTag('customer_support');
+  Front.attachTag("customer_support");
 }
 
 function tagCSMSupport() {
-  Front.attachTag('csm_support');
+  Front.attachTag("csm_support");
 }
 
 function tagSalesSupport() {
-  Front.attachTag('sales_support');
+  Front.attachTag("sales_support");
 }
 
 function tagUsblWebsites() {
-  Front.attachTag('u4w');
+  Front.attachTag("u4w");
 }
 
 function tagUsblApps() {
-  Front.attachTag('u4a');
+  Front.attachTag("u4a");
 }
 
 function tagUsblEmail() {
-  Front.attachTag('u4e');
+  Front.attachTag("u4e");
 }
 
 function tagUsblOther() {
-  Front.attachTag('other');
+  Front.attachTag("other");
 }
 
 function tagUsblGeneral() {
-  Front.attachTag('general');
+  Front.attachTag("general");
 }
