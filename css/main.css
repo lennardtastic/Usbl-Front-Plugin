@@ -69,6 +69,11 @@ button {
   color: #E3B200;
   border: 1px solid #F3E8C2;
 }
+.button-tag_grey{
+  background-color: #f0f0f0;
+  color: #9b9c9e;
+  border: 1px solid #d2d2d2
+}
 
 .button-tag_green:hover{
   background-color: rgba(192, 233, 223, 0.75);
@@ -90,6 +95,9 @@ button {
 }
 .button-tag_yellow:hover{
   background-color: rgba(244, 233, 195, 0.75);
+}
+.button-tag_grey:hover{
+  background-color: #fff;
 }
 
 
@@ -113,6 +121,9 @@ button {
 }
 .button-tag_yellow-active{
   background-color: rgba(244, 233, 195, 0.75);
+}
+.button-tag_grey-active{
+  background-color: #fff;
 }
 
 .button-tag span{

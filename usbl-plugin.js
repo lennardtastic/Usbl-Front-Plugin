@@ -87,34 +87,63 @@ Front.on('conversation', function(data) {
  * Usage: simply call function
  * @return Conversation gets tagged
  */
+
+//Contact type
 function tagCustomerSupport() {
   Front.attachTag("customer_support");
 }
-
 function tagCSMSupport() {
   Front.attachTag("csm_support");
 }
-
 function tagSalesSupport() {
   Front.attachTag("sales_support");
 }
-
-function tagUsblWebsites() {
-  Front.attachTag("u4w");
-}
-
-function tagUsblApps() {
-  Front.attachTag("u4a");
-}
-
-function tagUsblEmail() {
-  Front.attachTag("u4e");
-}
-
 function tagUsblOther() {
   Front.attachTag("other");
 }
 
+//Product or Service Type
+function tagUsblWebsites() {
+  Front.attachTag("u4w");
+}
+function tagUsblApps() {
+  Front.attachTag("u4a");
+}
+function tagUsblEmail() {
+  Front.attachTag("u4e");
+}
 function tagUsblGeneral() {
   Front.attachTag("general");
+}
+function tagUsblInPage() {
+  Front.attachTag("in-page");
+}
+function tagUsblApi() {
+  Front.attachTag("api");
+}
+
+//Product Subject type
+function tagUsblCustomization() {
+  Front.attachTag("customization");
+}
+function tagUsblFeature() {
+  Front.attachTag("feature_request");
+}
+function tagUsblBug() {
+  Front.attachTag("bug");
+}
+
+
+//Misc type
+function tagUsblLead() {
+  Front.attachTag("lead");
+}
+function tagUsblBlog() {
+  Front.attachTag("blog");
+}
+function tagUsblSpam() {
+  Front.attachTag("spam");
+}
+function tagUsblOoo() {
+  Front.attachTag("ooo");
 }
