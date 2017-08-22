@@ -145,3 +145,7 @@ button {
   vertical-align: baseline;
   cursor: pointer;
 }
+
+.h-onetwo-rem{
+  font-size: 1.2rem!important;
+}
