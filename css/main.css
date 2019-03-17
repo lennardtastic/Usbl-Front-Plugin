@@ -1,151 +1,197 @@
 /*
  * Consistent width buttons
  */
+
 button {
-  display: block;
-  width: 250px;
-  margin-left: auto;
-  margin-right: auto;
-  margin-top: 2px;
+    display: block;
+    width: 300px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 6px;
 }
 
-.button-tag{
-  display: block;
-  min-width: 250px;
-  margin-left: auto;
-  margin-right: auto;
-  margin-top: 2px;
-  text-transform: uppercase;
-  padding-right: 6px;
-  padding-left: 6px;
-  border-radius: 3px;
-  margin: 4px;
-  margin-right: 8px;
-  margin-left: 0;
-  display: -webkit-inline-flex;
-  display: inline-flex;
-  -webkit-flex-direction: row;
-  flex-direction: row;
-  height: 24px;
-  white-space: nowrap;
-  overflow: hidden;
-  text-overflow: ellipsis;
-  min-width: 0;
-  cursor: pointer;
-  line-height: 24px;
-}
-.button-tag_green{
-  background-color: #f6fffa;
-  color: #3fbc80;
-  border: 1px solid #c0e9df;
-}
-.button-tag_orange{
-  background-color: #fffbf5;
-  color: #fe9526;
-  border: 1px solid #fadcbc;
-}
-.button-tag_red{
-  background-color: #FFF5F7;
-  color: #DC3D51;
-  border: 1px solid #F3C2C9;
-}
-.button-tag_lightblue{
-  background-color: #f5ffff;
-  color: #3bafda;
-  border: 1px solid #c2e5f2;
-}
-.button-tag_blue{
-  background-color: #F5FAFF;
-  color: #367FD9;
-  border: 1px solid #C2D8F3;
-}
-.button-tag_pink{
-  background-color: #FFF5F7;
-  color: #FC6D89;
-  border: 1px solid #FFCCD7;
-}
-.button-tag_yellow{
-  background-color: #FFFDF5;
-  color: #E3B200;
-  border: 1px solid #F3E8C2;
-}
-.button-tag_grey{
-  background-color: #f0f0f0;
-  color: #9b9c9e;
-  border: 1px solid #d2d2d2
+.button-tag {
+    display: block;
+    font-family: Verdana!important;
+    min-width: 250px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 8px;
+    text-transform: uppercase;
+    padding-top: 2px;
+    padding-right: 16px;
+    padding-bottom: 2px;
+    padding-left: 16px;
+    border-radius: 24px;
+    box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.14), 0 2px 1px -1px rgba(0, 0, 0, 0.12), 0 1px 3px 0 rgba(0, 0, 0, 0.2);
+    margin: 6px;
+    margin-right: 8px;
+    margin-left: 0;
+    display: -webkit-inline-flex;
+    display: inline-flex;
+    -webkit-flex-direction: row;
+    flex-direction: row;
+    height: 27px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    min-width: 0;
+    cursor: pointer;
+    line-height: 27px;
+    transition: all .1s ease-in-out;
 }
 
-.button-tag_green:hover{
-  background-color: rgba(192, 233, 223, 0.75);
-}
-.button-tag_orange:hover{
-  background-color: rgba(250, 220, 187, 0.75);
-}
-.button-tag_red:hover{
-  background-color: rgba(244, 195, 202, 0.75);
-}
-.button-tag_lightblue:hover{
-  background-color: rgba(194, 229, 242, 0.75);
-}
-.button-tag_blue:hover{
-  background-color: rgba(195, 217, 244, 0.75);
-}
-.button-tag_pink:hover{
-  background-color: rgba(255, 204, 215, 0.75);
-}
-.button-tag_yellow:hover{
-  background-color: rgba(244, 233, 195, 0.75);
-}
-.button-tag_grey:hover{
-  background-color: #fff;
+.button-tag_green {
+    background-color: #ffffff;
+    color: #00c97e;
 }
 
-
-.button-tag_green-active{
-  background-color: rgba(192, 233, 223, 0.75);
-}
-.button-tag_orange-active{
-  background-color: rgba(250, 220, 187, 0.75);
-}
-.button-tag_red-active{
-  background-color: rgba(244, 195, 202, 0.75);
-}
-.button-tag_lightblue-active{
-  background-color: rgba(194, 229, 242, 0.75);
-}
-.button-tag_blue-active{
-  background-color: rgba(195, 217, 244, 0.75);
-}
-.button-tag_pink-active{
-  background-color: rgba(255, 204, 215, 0.75);
-}
-.button-tag_yellow-active{
-  background-color: rgba(244, 233, 195, 0.75);
-}
-.button-tag_grey-active{
-  background-color: #fff;
+.button-tag_orange {
+    background-color: #ffffff;
+    color: #ffb867;
 }
 
-.button-tag span{
-  font-size: 11px;
-  max-width: 20ch;
-  line-height: 22px;
-  white-space: nowrap;
-  overflow: hidden;
-  text-overflow: ellipsis;
-  min-width: 0;
-  margin: 0;
-  padding: 0;
-  border: 0;
-  outline: 0;
-  font-weight: inherit;
-  font-style: inherit;
-  font-family: inherit;
-  font-size: 12px;
-  vertical-align: baseline;
-  cursor: pointer;
+.button-tag_red {
+    background-color: #ffffff;
+    color: #ed4a59;
 }
 
-.h-onetwo-rem{
-  font-size: 1.2rem!important;
+.button-tag_lightblue {
+    background-color: #ffffff;
+    color: #cdf2ff;
+}
+
+.button-tag_blue {
+    background-color: #ffffff;
+    color: #00A5C9;
+}
+
+.button-tag_pink {
+    background-color: #ffffff;
+    color: #fcaab2;
+}
+
+.button-tag_yellow {
+    background-color: #ffffff;
+    color: #ffd442;
+}
+
+.button-tag_grey {
+    background-color: #ffffff;
+    color: #9cacba;
+}
+
+.button-tag_green:hover {
+    background-color: #00c97e;
+    color: #ffffff;
+    transform: translateY(-3px);
+}
+
+.button-tag_orange:hover {
+    background-color: #ffb867;
+    color: #ffffff;
+    transform: translateY(-3px);
+}
+
+.button-tag_red:hover {
+    background-color: #ed4a59;
+    color: #ffffff;
+    transform: translateY(-3px);
+}
+
+.button-tag_lightblue:hover {
+    background-color: #cdf2ff;
+    color: #ffffff;
+    transform: translateY(-3px);
+}
+
+.button-tag_blue:hover {
+    background-color: #00a5c9;
+    color: #ffffff;
+    transform: translateY(-3px);
+}
+
+.button-tag_pink:hover {
+    background-color: #fcaab2;
+    color: #ffffff;
+    transform: translateY(-3px);
+}
+
+.button-tag_yellow:hover {
+    background-color: #ffd442;
+    color: #ffffff;
+    transform: translateY(-3px);
+}
+
+.button-tag_grey:hover {
+    background-color: #9cacba;
+    color: #ffffff;
+    transform: translateY(-3px);
+}
+
+.button-tag_green:active {
+    background-color: #00c97e;
+    color: #ffffff;
+}
+
+.button-tag_orange:active {
+    background-color: #ffb867;
+    color: #ffffff;
+}
+
+.button-tag_red:active {
+    background-color: #ed4a59;
+    color: #ffffff;
+}
+
+.button-tag_lightblue:active {
+    background-color: #cdf2ff;
+    color: #ffffff;
+}
+
+.button-tag_blue:active {
+    background-color: #00a5c9;
+    color: #ffffff;
+}
+
+.button-tag_pink:active {
+    background-color: #fcaab2;
+    color: #ffffff;
+}
+
+.button-tag_yellow:active {
+    background-color: #ffd442;
+    color: #ffffff;
+}
+
+.button-tag_grey:active {
+    background-color: #9cacba;
+    color: #ffffff;
+}
+
+.button-tag span {
+    font-size: 14px;
+    max-width: 20ch;
+    line-height: 25px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    min-width: 0;
+    margin: 0;
+    padding: 0;
+    border: 0;
+    outline: 0;
+    font-weight: inherit;
+    font-style: inherit;
+    font-family: inherit;
+    font-size: 14px;
+    vertical-align: baseline;
+    cursor: pointer;
+}
+
+.h-onetwo-rem {
+    font-size: 16px!important;
+    color: #6b6b6b!important;
+    font-family: sans-serif!important;
+    text-transform: uppercase;
 }
