@@ -105,6 +105,23 @@ function tagUsblOther() {
     Front.attachTag("other");
 }
 
+//Domain type
+function tagCustomerSupport() {
+    Front.attachTag("ask");
+}
+
+function tagCSMSupport() {
+    Front.attachTag("analyze");
+}
+
+function tagSalesSupport() {
+    Front.attachTag("act");
+}
+
+function tagUsblOther() {
+    Front.attachTag("mobile");
+}
+
 //Product or Service Type
 function tagUsblWebsites() {
     Front.attachTag("u4w");
