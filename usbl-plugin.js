@@ -106,19 +106,19 @@ function tagUsblOther() {
 }
 
 //Domain type
-function tagCustomerSupport() {
+function tagDomainAsk() {
     Front.attachTag("ask");
 }
 
-function tagCSMSupport() {
-    Front.attachTag("analyze");
+function tagDomainAnalyse() {
+    Front.attachTag("analyse");
 }
 
-function tagSalesSupport() {
+function tagDomainAct() {
     Front.attachTag("act");
 }
 
-function tagUsblOther() {
+function tagDomainMobile() {
     Front.attachTag("mobile");
 }
 
