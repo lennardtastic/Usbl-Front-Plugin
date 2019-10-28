@@ -79,7 +79,7 @@ function fetchTags() {
  */
 Front.on('conversation', function(data) {
     conversation = data.conversation;
-    Front.fetchTags();
+    // Front.fetchTags();
 });
 
 /**
@@ -136,7 +136,7 @@ function tagUsblApps() {
 }
 
 function tagUsblInPage() {
-    Front.attachTag("in-page");
+    Front.attachTag("inpage");
 }
 
 function tagUsblAccount() {
